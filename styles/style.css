@@ -84,8 +84,26 @@ nav ul li a {
     justify-content: center;
     gap: 57px;
 }
+/* gallery style */
 
+.gallery-star{
+  display: flex;
+  align-items: center;
+  
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 
+ 
+  row-gap: 12px; /* Add this line to adjust the vertical spacing */
+}
+
+.gallery {
+  width: 329px;
+  height: 476px;
+  margin-bottom: 0; /* Add this line to remove the bottom margin */
+}
 
 
 
@@ -95,9 +113,12 @@ nav ul li a {
     nav{
      display: flex;
      flex-direction: column;
+     margin: 0;
     }
     .nav ul {
-        gap: 12px;
+       
+        padding: 0;
+        max-width: 90%;
     }
   .banner-container{
         flex-direction:column-reverse;
